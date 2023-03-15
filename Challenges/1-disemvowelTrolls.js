@@ -9,5 +9,7 @@
 // Nota: para este kata y no se considera una vocal.
 
 function disemvowel(str) {
-  return str;
+  return str.replace(/[aeiou]/gi, "")
 }
+
+console.log(disemvowel("¡Este sitio web es para perdedores LOL!"));
