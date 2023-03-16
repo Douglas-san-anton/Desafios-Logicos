@@ -10,6 +10,10 @@
 
 function disemvowel(str) {
   return str.replace(/[aeiou]/gi, "")
+
+  //Utilizamos la expresión regular /[aeiou]/gi la bandera g para que encuentre todas las ocurrencias en lugar de detenerse en la primera.
+  //La bandera i se utiliza para hacer que la búsqueda sea insensible a mayúsculas y minúsculas.
+  // Luego, utilizamos el método replace() para reemplazar todas las vocales encontradas en la cadena de texto con una cadena vacía ""..
 }
 
 console.log(disemvowel("¡Este sitio web es para perdedores LOL!"));
