@@ -5,5 +5,16 @@
 //   Nota: si el número es un múltiplo de 3 y 5, solo cuéntelo una vez.
 
 function solution(number) {
-
+  if (number < 0) return 0
+  let suma = 0;
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      suma += i;
+    }
+  }
+  return suma;
 }
+
+console.log(solution(10))
+console.log(solution(8))
+console.log(solution(6))
