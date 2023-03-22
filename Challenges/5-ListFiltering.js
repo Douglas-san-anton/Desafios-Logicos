@@ -7,4 +7,7 @@
 
 function filter_list(l) {
   // Devuelve una nueva matriz con las cadenas filtradas
+  return l.filter(function (item) {
+    return typeof item === 'number';
+  });
 }
